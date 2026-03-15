@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+
+<title>Login - Surabaya Marathon</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.login-box{
+background:white;
+padding:40px;
+width:350px;
+border-radius:8px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#ff5a00;
+margin-bottom:10px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#ff5a00;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e64a00;
+}
+
+a{
+text-decoration:none;
+color:#ff5a00;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="login-box">
 
-<h1>Log in.</h1>
-<p>Pakai akun Surabaya Marathon untuk log in.</p>
+<div class="logo">SURABAYA MARATHON</div>
 
-<form action="login.php" method="post">
+<h2>Log in</h2>
 
-<label>Alamat Email</label>
-<input type="email" name="email" required>
+<form>
 
-<label>Password</label>
-<input type="password" name="password" required>
+<input type="email" placeholder="Email address">
 
-<div class="remember">
-<input type="checkbox"> Ingat saya?
-</div>
+<input type="password" placeholder="Password">
 
 <button type="submit">Log in</button>
 
 </form>
 
-<p><a href="#">Lupa password anda?</a></p>
-<p><a href="#">Daftar</a> jika anda belum memiliki akun.</p>
+<p>Belum punya akun? <a href="#">Daftar</a></p>
 
 </div>
 
 </body>
+
 </html>
